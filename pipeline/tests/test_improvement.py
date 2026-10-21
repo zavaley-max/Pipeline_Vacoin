@@ -159,7 +159,7 @@ class LabTests(unittest.TestCase):
         import runner
         self.plan["baseline_ref"] = "b" * 40
         with patch.object(runner, "git", side_effect=["", "a" * 40]):
-            with self.assertRaises(lab.Invalid):
+            with self.assertRaises(runner.lab.Invalid):
                 runner.start(self.plan, self.root, self.home / "pilot", "c1",
                              "Improve instruction quality", timeout=120, execute=False)
 
@@ -174,7 +174,7 @@ class LabTests(unittest.TestCase):
         self.plan["candidates"].append(copy.deepcopy(self.plan["candidates"][0]))
         self.plan["candidates"][1]["id"] = "c2"
         self.plan["baseline_ref"] = "a" * 40
-        with self.assertRaises(lab.Invalid):
+        with self.assertRaises(runner.lab.Invalid):
             runner.start(self.plan, self.root, self.home / "pilot", "c2",
                          "Improve instruction quality", timeout=120, execute=False)
 
