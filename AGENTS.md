@@ -15,4 +15,4 @@ This repository is the **distribution** of a Codex-first engineering workflow fo
 9. Explicitly request or verify authorization for high-impact operations. Preserve user data and rollback options.
 10. Harness improvement experiments require isolated workspaces, independent checks and human approval. Do not auto-adopt experimental agent rules.
 
-Start with [pipeline/README.md](pipeline/README.md); use [docs/FUNCTIONALITY.md](docs/FUNCTIONALITY.md) for detail. Hook examples are not enabled automatically.
+Start with [pipeline/README.md](pipeline/README.md); see the full guide at https://github.com/zavaley-max/Pipeline_Vacoin/blob/main/docs/FUNCTIONALITY.md. Hook examples are not enabled automatically.
