@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "REPLACE_WITH_EXACT_PROJECT_FOLDER_NAME",
+  "mode": "parallel",
+  "task_id": "EXAMPLE-ONLY",
+  "authorization_ref": "REPLACE_WITH_USER_APPROVAL",
+  "baseline_ref": "REPLACE_WITH_FULL_CURRENT_GIT_SHA",
+  "auto_promote": false,
+  "cross_project_sync": false,
+  "candidates": [
+    {
+      "id": "c1",
+      "lever": "skill",
+      "hypothesis": "An explicit checklist reduces missed requirements",
+      "edits": [
+        {
+          "path": "pipeline/skills/vacoin-plan/SKILL.md",
+          "operation": "modify",
+          "reason": "Pilot only; not approved by this template"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "functional",
+      "kind": "functional",
+      "independent": true
+    },
+    {
+      "id": "regression",
+      "kind": "regression",
+      "independent": true
+    },
+    {
+      "id": "security",
+      "kind": "security",
+      "independent": true
+    }
+  ]
+}

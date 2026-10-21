@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "project": "REPLACE_WITH_EXACT_PROJECT_FOLDER_NAME",
+  "task_id": "EXAMPLE-ONLY",
+  "candidate_id": "c1",
+  "plan_sha256": "REPLACE_WITH_VALIDATED_DIGEST",
+  "run_id": "EXAMPLE-NOT-A-REAL-RUN",
+  "isolated_workspace": "REPLACE_WITH_WORKTREE_REFERENCE",
+  "evaluator_ref": "REPLACE_WITH_INDEPENDENT_EVALUATOR",
+  "status": "incomplete",
+  "checks": {
+    "functional": null,
+    "regression": null,
+    "security": null
+  }
+}

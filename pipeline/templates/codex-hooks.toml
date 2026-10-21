@@ -1,0 +1,12 @@
+# EXAMPLE ONLY. Verify Codex CLI version, hook support, exact paths and permissions.
+# Do not overwrite existing user configuration. Not active after installation.
+[features]
+hooks = true
+
+[[hooks.PreToolUse]]
+matcher = "^(apply_patch|Edit|Write|Bash)$"
+
+[[hooks.PreToolUse.hooks]]
+type = "command"
+command = 'python3 "/ABSOLUTE/PROJECT/pipeline/scripts/pipeline.py" hook --root "/ABSOLUTE/SANDBOX" --manifest "/ABSOLUTE/EVIDENCE/scope.json"'
+timeout = 15
