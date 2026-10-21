@@ -250,7 +250,7 @@ def resume_check(root, m, session_id, baseline=None):
     text = state.read_text(encoding="utf-8")
     task = re.search(r"(?m)^-\s*task_id:\s*([^\s.;]+)", text)
     sid = re.search(r"(?m)^-\s*session_id:\s*([^\s.;]+)", text)
-    status = re.search(r"(?m)^-\s*Статус сессии:\s*(open|active|completed)\b", text)
+    status = re.search(r"(?m)^-\s*(?:Session status|Статус сессии):\s*(open|active|completed)\b", text)
     ref = re.search(r"(?m)^-\s*task_ref:\s*\[[^\]]+\]\(([^)]+)\)", text)
     issues = []
     if not task or task[1] != card["task_id"] or not sid or sid[1] != session_id:
