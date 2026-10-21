@@ -138,7 +138,7 @@ class ReliabilityTests(unittest.TestCase):
             {"id": "current", "task_id": "task-a", "status": "active", "state_file": "current/SESSION.md"},
             {"id": "other", "task_id": "other-task", "status": "open", "state_file": "not-present/SESSION.md"}]}))
         (folder / "SESSION.md").write_text("- task_id: task-a.\n- session_id: current.\n"
-                                         "- Статус сессии: active.\n- task_ref: [TASK](../../../TASK.md).\n")
+                                         "- Session status: active.\n- task_ref: [TASK](../../../TASK.md).\n")
         (folder / "HISTORY.md").write_text("Started, interrupted; no acceptance")
         (self.root / "TASK.md").write_text("Pending user acceptance")
         return folder
