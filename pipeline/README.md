@@ -8,7 +8,7 @@ Start in `AGENTS.md`; choose a route in `requests/` and an installed skill in `.
 - [Scope and guardrails](GUARDS.md)
 - [Skill catalog](SKILLS.md)
 - [Improvement experiments](improvement/README.md)
-- [Full user guide](../docs/FUNCTIONALITY.md)
+- [Full user guide](https://github.com/zavaley-max/Pipeline_Vacoin/blob/main/docs/FUNCTIONALITY.md)
 
 The core CLI is `scripts/pipeline.py`; all Codex hooks are opt-in. The optional improvement lab is experimental and never automatically shares learning between projects.
 
