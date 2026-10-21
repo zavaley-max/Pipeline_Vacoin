@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Implement"
+  short_description: "Implement an approved change with precise file scope and targeted checks."
+  default_prompt: "Apply the vacoin-implement skill for this task; follow AGENTS.md and project requirements."

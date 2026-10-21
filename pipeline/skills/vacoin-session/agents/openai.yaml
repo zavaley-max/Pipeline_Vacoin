@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Session"
+  short_description: "Keep task sessions recoverable, linked to requirements, and accurately statused."
+  default_prompt: "Apply the vacoin-session skill for this task; follow AGENTS.md and project requirements."

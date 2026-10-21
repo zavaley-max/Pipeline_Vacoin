@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Research"
+  short_description: "Investigate technical implementations and compare evidence without changing application files."
+  default_prompt: "Apply the vacoin-research skill for this task; follow AGENTS.md and project requirements."

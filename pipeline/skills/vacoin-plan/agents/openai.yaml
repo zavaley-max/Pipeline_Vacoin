@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Plan"
+  short_description: "Translate approved requirements into architecture-aware, file-specific implementation plans."
+  default_prompt: "Apply the vacoin-plan skill for this task; follow AGENTS.md and project requirements."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Server bugfix"
+  short_description: "Investigate infrastructure or server-side defects with controlled risk and rollback."
+  default_prompt: "Apply the vacoin-server-bugfix skill for this task; follow AGENTS.md and project requirements."

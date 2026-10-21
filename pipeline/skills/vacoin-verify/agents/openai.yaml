@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Verify"
+  short_description: "Perform targeted and final checks, examine receipts, and assess regressions."
+  default_prompt: "Apply the vacoin-verify skill for this task; follow AGENTS.md and project requirements."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Stuck"
+  short_description: "Resolve repeated unsuccessful coding attempts through structured diagnosis."
+  default_prompt: "Apply the vacoin-stuck skill for this task; follow AGENTS.md and project requirements."

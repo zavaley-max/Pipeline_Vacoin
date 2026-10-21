@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Lessons"
+  short_description: "Record confirmed engineering lessons with context, limits and evidence."
+  default_prompt: "Apply the vacoin-lessons skill for this task; follow AGENTS.md and project requirements."

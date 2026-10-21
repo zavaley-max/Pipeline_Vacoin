@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Bugfix"
+  short_description: "Reproduce and correct a bug with minimal change and regression evidence."
+  default_prompt: "Apply the vacoin-bugfix skill for this task; follow AGENTS.md and project requirements."

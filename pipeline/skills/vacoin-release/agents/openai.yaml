@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Release"
+  short_description: "Prepare a reviewed software release and rollback plan without deploying automatically."
+  default_prompt: "Apply the vacoin-release skill for this task; follow AGENTS.md and project requirements."

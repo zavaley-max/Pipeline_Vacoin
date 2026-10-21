@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Maintain"
+  short_description: "Maintain the pipeline's reusable instructions, tests and integrations under authorization."
+  default_prompt: "Apply the vacoin-maintain skill for this task; follow AGENTS.md and project requirements."

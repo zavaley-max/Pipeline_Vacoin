@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Guards"
+  short_description: "Validate scope restrictions, protected paths and hook behavior."
+  default_prompt: "Apply the vacoin-guards skill for this task; follow AGENTS.md and project requirements."

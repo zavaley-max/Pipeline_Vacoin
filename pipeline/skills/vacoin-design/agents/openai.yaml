@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Design"
+  short_description: "Turn user-interface requirements into a testable, implementation-ready handoff."
+  default_prompt: "Apply the vacoin-design skill for this task; follow AGENTS.md and project requirements."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vacoin Review"
+  short_description: "Independently review plans, code changes, scope and verification evidence."
+  default_prompt: "Apply the vacoin-review skill for this task; follow AGENTS.md and project requirements."
