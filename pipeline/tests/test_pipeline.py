@@ -10,7 +10,7 @@ import tempfile
 import unittest
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/pipeline.py"
-spec = importlib.util.spec_from_file_location("aromatik_pipeline", SCRIPT)
+spec = importlib.util.spec_from_file_location("vacoin_pipeline", SCRIPT)
 engine = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(engine)
 
@@ -232,7 +232,7 @@ class GuardTests(unittest.TestCase):
 
     def test_user_tool_rule_denies_matching_command(self):
         self.m["tool_rules"] = [{"tool_regex": "Bash", "command_regex": r"git\s+push",
-                                 "decision": "deny", "reason": "Публикация не разрешена"}]
+                                 "decision": "deny", "reason": "Publishing is not authorized"}]
         engine.load_manifest(self.manifest_file())
         with self.assertRaises(engine.Invalid):
             engine.hook_decision(self.root, self.m, {"hook_event_name": "PreToolUse", "tool_name": "Bash",
