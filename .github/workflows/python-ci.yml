@@ -17,3 +17,11 @@ jobs:
         run: python -m unittest discover -s pipeline/tests -v
       - name: Core diagnostics
         run: python pipeline/scripts/pipeline.py doctor --root .
+      - name: Install smoke test in an isolated Git repository
+        run: |
+          TARGET="$(mktemp -d)"
+          git -C "$TARGET" init -q
+          python scripts/install.py --target "$TARGET"
+          python scripts/install.py --target "$TARGET" --apply
+          python "$TARGET/pipeline/scripts/pipeline.py" doctor --root "$TARGET"
+          test "$(find "$TARGET/.agents/skills" -mindepth 1 -maxdepth 1 -type d | wc -l)" -eq 14
